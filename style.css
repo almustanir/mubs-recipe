@@ -1,0 +1,216 @@
+/* *{
+    padding: 0;
+    outline: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: chocolate;
+}
+
+.container {
+    position: absolute;
+    overflow: hidden;
+    left: 50;
+    max-width: 37.5rem;
+    height: 20vh;
+    width: 80vw;
+    padding: 3rem 2rem;
+    top: 15%;
+    left: 50%;
+    background-color: white;
+    transform: translate(-45%, -45%);
+    -webkit-transform: translate(-45%, -45%);
+    -moz-transform: translate(-45%, -45%);
+    -ms-transform: translate(-45%, -45%);
+    -o-transform: translate(-45%, -45%);
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;   
+   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    
+}
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+
+}
+
+.search-container button {
+    font-size: 1.3rem;
+    background-color: chocolate;
+    color: black;
+    padding: 1.8rem 3;
+    border:none;
+    height: 60px;
+    width: 120px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.search-container input {
+    font-size: 1.5rem;
+    padding: 0 0.6rem;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&family=Nunito+Sans:wght@300&display=swap');
+
+body {
+    background-color:darkcyan;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.container {
+    background-color: white;
+    padding: 3rem 2.8rem;
+    width: 80vw;
+    max-width: 30rem;
+    position: absolute;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    left: 50%;
+    top: 2rem;
+    border-radius: 0.6rem;
+    -webkit-border-radius: 0.6rem;
+    -moz-border-radius: 0.6rem;
+    -ms-border-radius: 0.6rem;
+    -o-border-radius: 0.6rem;
+    background-image: url(/pexels-min-an-1353938.jpg);  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.container h2 {
+    color: rgb(101, 84, 84);
+}
+.container h2 span {
+    color: rgb(3, 110, 3);
+}
+
+
+.search-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.2rem;
+}
+
+.search-container input {
+    font-size: 1rem;
+    padding: 0.6rem;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.search-container button {
+    font-size: 1rem;
+    background-color:green;
+    border: none;
+    color: white;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+}
+
+img {
+    display: block;
+    width: 50%;
+    margin: 1.8rem auto 0 auto;
+}
+
+.details {
+    /* background-color:whitesmoke ; */
+    position: relative;
+    text-align: center;
+    padding: 0.6rem 0;
+}
+.details h2 {
+    font-size: 1.3rem;
+}
+.details h4 {
+    font-size: 1rem;
+}
+#recipe{
+    position: absolute;
+    background-color: #ffff;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-radius: 0.6rem;
+    -webkit-border-radius: 0.6rem;
+    -moz-border-radius: 0.6rem;
+    -ms-border-radius: 0.6rem;
+    -o-border-radius: 0.6rem;
+
+
+    display: none;
+}
+
+#hide-recipe {
+    font-size: 1rem;
+    position: relative;
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: darkcyan;
+    border: none;
+    top: 1.2rem;
+    left: 90%;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+}
+
+
+#recipe pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 2.5rem 1.2rem 1.2rem 1.2rem;
+}
+
+#show-recipe {
+    font-size: 1rem;
+    position: relative;
+    left: 75%;
+    padding: 0.9rem 0.6rem;
+    background-color: green;
+    border: none;
+    top: 1.5rem;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+}
+
+ul {
+    font-size: 1rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.8rem 1.1rem;
+    padding: 1.2rem 0 0;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 1.8rem;
+    color: black;
+}
+
